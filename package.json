@@ -1,0 +1,39 @@
+{
+  "name": "water-earth-cesium-vue3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "快速搭建基于Cesium的Vue3工程化项目",
+  "scripts": {
+    "dev": "vite",
+    "dev": "vite",
+    "dev:pro": "vite --mode production",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:dev": "vue-tsc && vite build --mode development",
+    "build:pro": "vue-tsc && vite build --mode production",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.0.0",
+    "axios": "^1.7.2",
+    "cesium": "^1.118.2",
+    "cesium-navigation-es6": "^3.0.9",
+    "d3": "^7.9.0",
+    "echarts": "^5.5.0",
+    "element-plus": "^2.7.5",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "turf": "^3.0.14",
+    "vite-plugin-cesium": "^1.2.22",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
