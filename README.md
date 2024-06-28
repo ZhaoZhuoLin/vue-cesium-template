@@ -32,3 +32,36 @@ pnpm run build:dev
 
 ## 展示
 - ![main.png](main.png)
+
+
+
+## 打包优化
+```
+压缩优化
+1. pnpm add vite-plugin-compression
+2. viteCompression({
+    verbose: true, // 默认即可
+    disable: false, // 开启压缩(不禁用)，默认即可
+    deleteOriginFile: false, // 删除源文件
+    threshold: 5120, // 压缩前最小文件大小
+    algorithm: 'gzip', // 压缩算法
+    ext: '.gz' // 文件类型
+  })
+
+3.nginx添加压缩配置
+ # 开启或者关闭gzip模块(on|off)
+    gzip on;
+```
+
+```
+去除log和debugger
+1. pnpm add terser 
+2. build:{
+    terserOptions: {
+        compress: {
+                drop_console: true,
+                drop_debugger: true
+            }
+        },
+    }
+```

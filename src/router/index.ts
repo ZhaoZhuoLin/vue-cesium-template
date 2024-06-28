@@ -1,6 +1,6 @@
 
 
-import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import asyncRouter from "./asyncRouter.ts"
 const router = createRouter({
     history: createWebHashHistory(),
